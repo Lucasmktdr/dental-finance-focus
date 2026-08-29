@@ -6,7 +6,6 @@ import { Alternatives } from "@/components/landing/Alternatives";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Audience } from "@/components/landing/Audience";
 import { Tools } from "@/components/landing/Tools";
-import { SocialProof } from "@/components/landing/SocialProof";
 import { Offer } from "@/components/landing/Offer";
 import { Faq, FAQ_ITEMS } from "@/components/landing/Faq";
 import { LeadForm } from "@/components/landing/LeadForm";
@@ -61,7 +60,6 @@ function LandingPage() {
       <HowItWorks />
       <Audience />
       <Tools />
-      <SocialProof />
       <Offer />
       <Faq />
       <LeadForm />
