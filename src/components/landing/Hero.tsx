@@ -1,16 +1,23 @@
-import { useState } from "react";
-import { Play } from "lucide-react";
-import heroDashboard from "@/assets/hero-dashboard.jpg";
+import { useEffect } from "react";
 import { CTAButton, CTALink } from "./CTAButton";
 import { track } from "@/lib/tracking";
 import { whatsappUrl } from "@/lib/contact";
+
+const VTURB_SCRIPT_SRC =
+  "https://scripts.converteai.net/745b4cf5-91b5-4673-8a71-5f8f743b60be/players/6a9331019560666e344b9d6e/v4/player.js";
 
 function scrollToForm() {
   document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
 }
 
 export function Hero() {
-  const [videoOpen, setVideoOpen] = useState(false);
+  useEffect(() => {
+    if (document.querySelector(`script[src="${VTURB_SCRIPT_SRC}"]`)) return;
+    const s = document.createElement("script");
+    s.src = VTURB_SCRIPT_SRC;
+    s.async = true;
+    document.head.appendChild(s);
+  }, []);
 
   return (
     <header className="bg-primary-deep px-4 pb-12 pt-8 text-primary-foreground sm:px-6 md:pb-20 md:pt-14">
@@ -54,37 +61,24 @@ export function Hero() {
 
         <div className="md:pl-2">
           <div className="mx-auto w-full max-w-[300px] overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary/40 shadow-[var(--shadow-card)]">
-            <div className="relative aspect-[9/16]">
-              {videoOpen ? (
-                <div className="flex h-full w-full items-center justify-center bg-primary p-6 text-center text-sm text-primary-foreground/80">
-                  [PREENCHER: incorporar aqui o vídeo vertical 9:16 de 90 segundos]
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  aria-label="Assistir vídeo de 90 segundos"
-                  onClick={() => {
-                    track("video_play", { location: "hero" });
-                    setVideoOpen(true);
-                  }}
-                  className="group relative block h-full w-full"
-                >
-                  <img
-                    src={heroDashboard}
-                    alt="Painel de indicadores financeiros com gráficos de lucro por procedimento"
-                    width={1280}
-                    height={1600}
-                    fetchPriority="high"
-                    className="h-full w-full object-cover opacity-80"
-                  />
-                  <span className="absolute inset-0 flex items-center justify-center">
-                    <span className="flex h-16 w-16 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-[var(--shadow-cta)] transition-transform group-hover:scale-105">
-                      <Play className="h-7 w-7 translate-x-0.5" aria-hidden="true" />
-                    </span>
-                  </span>
-                </button>
-              )}
-            </div>
+            {/* VTurb smartplayer — VSL com autoplay (9:16) */}
+            {/* @ts-expect-error elemento customizado do VTurb */}
+            <vturb-smartplayer
+              id="vid-6a9331019560666e344b9d6e"
+              style={{ display: "block", margin: "0 auto", width: "100%", maxWidth: "400px" }}
+            >
+              <div
+                className="vturb-player-placeholder"
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  padding: "177.77777777777777% 0 0",
+                  zIndex: 0,
+                  backgroundColor: "black",
+                }}
+              />
+            {/* @ts-expect-error elemento customizado do VTurb */}
+            </vturb-smartplayer>
             <p className="border-t border-primary-foreground/10 px-4 py-3 text-center text-sm text-primary-foreground/80">
               Assista em 90 segundos como funciona
             </p>
