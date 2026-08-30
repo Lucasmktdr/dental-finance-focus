@@ -67,10 +67,3 @@ export function Section({
   );
 }
 
-export function Placeholder({ children }: { children: ReactNode }) {
-  return (
-    <div className="rounded-xl border-2 border-dashed border-primary/30 bg-secondary/60 p-5 text-sm font-medium text-muted-foreground">
-      {children}
-    </div>
-  );
-}
