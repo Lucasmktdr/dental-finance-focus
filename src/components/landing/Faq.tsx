@@ -25,7 +25,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Meus dados ficam salvos se eu não continuar?",
-    a: "Seus cadastros permanecem vinculados à sua conta. Se você retomar a assinatura, encontra tudo como deixou. [PREENCHER: prazo de retenção de dados após o cancelamento]",
+    a: "Seus cadastros permanecem vinculados à sua conta. Se você retomar a assinatura, encontra tudo como deixou. Também é possível solicitar a exclusão dos seus dados a qualquer momento pelo nosso suporte.",
   },
   {
     q: "Quanto custa depois do teste gratuito?",
