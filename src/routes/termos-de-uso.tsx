@@ -40,9 +40,9 @@ function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-foreground">2. Teste gratuito e assinatura</h2>
             <p className="mt-2">
-              O acesso inicial ocorre por meio de teste gratuito de 7 dias. Encerrado o período, a
-              continuidade depende da contratação do plano mensal de R$ 89,90 ou do plano anual de
-              R$ 497,00. O cancelamento pode ser solicitado a qualquer momento, sem multa.
+               O acesso inicial ocorre por meio de teste gratuito de 7 dias. Encerrado o período, a
+               continuidade depende da contratação do plano mensal de R$ 89,90. O cancelamento pode
+               ser solicitado a qualquer momento, sem multa.
             </p>
           </section>
           <section>

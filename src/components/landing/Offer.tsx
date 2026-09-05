@@ -52,7 +52,7 @@ export function Offer() {
             R$ 89,90 <span className="text-base font-medium text-muted-foreground">/mês</span>
           </p>
           <p className="mt-1 text-base text-muted-foreground">
-            ou R$ 497,00 por ano (equivalente a R$ 41,42/mês)
+            Sem fidelidade. Cancele quando quiser.
           </p>
           <p className="mt-4 flex gap-3 rounded-lg bg-accent/10 p-4 text-base leading-relaxed text-foreground">
             <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
