@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { Hero } from "@/components/landing/Hero";
 import { Pains } from "@/components/landing/Pains";
 import { Alternatives } from "@/components/landing/Alternatives";
+import { BeliefBreak } from "@/components/landing/BeliefBreak";
+import { ImplantCase } from "@/components/landing/ImplantCase";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Audience } from "@/components/landing/Audience";
 import { Tools } from "@/components/landing/Tools";
@@ -56,6 +58,8 @@ function LandingPage() {
     <main className="bg-background">
       <Hero />
       <Pains />
+      <BeliefBreak />
+      <ImplantCase />
       <Alternatives />
       <HowItWorks />
       <Audience />
