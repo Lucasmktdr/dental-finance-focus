@@ -16,8 +16,8 @@ export const FAQ_ITEMS = [
     a: "Não. Você preenche seus custos e o tempo de trabalho em campos guiados; a plataforma faz o cálculo e mostra o resultado pronto para comparar com o preço que você cobra hoje.",
   },
   {
-    q: "O que acontece quando os 7 dias acabarem?",
-    a: "Você escolhe continuar no plano mensal de R$ 89,90 ou no anual de R$ 497,00. Se não quiser continuar, o acesso simplesmente é encerrado.",
+    q: "O que acontece quando os 7 dias de teste acabarem?",
+    a: "Após os 7 dias, o acesso passa a R$ 89,90/mês. Você conta com 30 dias de garantia e pode cancelar quando quiser, sem multa. Se preferir não continuar, o acesso simplesmente é encerrado.",
   },
   {
     q: "Funciona para clínica com 1 dentista só?",
@@ -26,10 +26,6 @@ export const FAQ_ITEMS = [
   {
     q: "Meus dados ficam salvos se eu não continuar?",
     a: "Seus cadastros permanecem vinculados à sua conta. Se você retomar a assinatura, encontra tudo como deixou. Também é possível solicitar a exclusão dos seus dados a qualquer momento pelo nosso suporte.",
-  },
-  {
-    q: "Quanto custa depois do teste gratuito?",
-    a: "R$ 89,90 por mês ou R$ 497,00 por ano, com 30 dias de garantia e cancelamento quando quiser.",
   },
 ];
 
