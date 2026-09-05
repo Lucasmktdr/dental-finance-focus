@@ -48,18 +48,6 @@ export function HowItWorks() {
           </li>
         ))}
       </ol>
-
-      <div className="mt-8 rounded-xl border border-border bg-card p-5 sm:p-6">
-        <span className="inline-block rounded-full bg-secondary px-3 py-1 text-xs font-semibold uppercase tracking-wide text-secondary-foreground">
-          Exemplo ilustrativo
-        </span>
-        <p className="mt-3 text-base leading-relaxed text-card-foreground sm:text-lg">
-          Se o preço calculado para um procedimento for <strong>R$ 1.200</strong> e o preço
-          praticado hoje for <strong>R$ 950</strong>, essa diferença representaria{" "}
-          <strong>R$ 2.500</strong> em 10 procedimentos. Números fictícios, apenas para mostrar
-          como a comparação aparece na tela — o seu resultado depende dos seus custos.
-        </p>
-      </div>
     </Section>
   );
 }
