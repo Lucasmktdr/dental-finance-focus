@@ -21,45 +21,25 @@ export function Hero() {
 
   return (
     <header className="bg-primary-deep px-4 pb-12 pt-8 text-primary-foreground sm:px-6 md:pb-20 md:pt-14">
-      <div className="mx-auto grid w-full max-w-5xl gap-8 md:grid-cols-2 md:items-center">
-        <div>
-          <p className="inline-block rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide sm:text-sm">
-            Software de precificação e gestão financeira para dentistas
-          </p>
-          <h1 className="mt-4 text-3xl font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl">
-            Você está faturando bem. Mas sabe mesmo quanto está lucrando?
-          </h1>
-          <p className="mt-4 text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-            Em poucos minutos, veja quanto custa sua hora clínica e quanto cada tratamento
-            realmente deixa de lucro — sem depender de planilha.
-          </p>
+      <div className="mx-auto w-full max-w-3xl text-center">
+        <p className="inline-block rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide sm:text-sm">
+          Precificação e lucro real por procedimento
+        </p>
+        <h1 className="mt-4 text-[1.75rem] font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl">
+          Você pode estar trabalhando, atendendo e faturando — e mesmo assim{" "}
+          <span className="text-accent">perdendo dinheiro em cada procedimento.</span>
+        </h1>
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
+          Descubra quanto realmente custa cada tratamento da sua clínica e qual deveria ser o seu
+          preço antes de continuar vendendo no prejuízo.
+        </p>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <CTAButton
-              onClick={() => {
-                track("cta_click", { location: "hero", variant: "form" });
-                scrollToForm();
-              }}
-            >
-              Calcular meu lucro real
-            </CTAButton>
-            <CTALink
-              href={whatsappUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="whatsapp"
-              className="text-primary-foreground"
-              onClick={() => track("whatsapp_click", { location: "hero" })}
-            >
-              Falar no WhatsApp
-            </CTALink>
-          </div>
-          <p className="mt-3 text-sm text-primary-foreground/70">
-            Teste gratuito de 7 dias. Sem instalação.
-          </p>
-        </div>
+        <p className="mx-auto mt-6 max-w-xl text-sm font-medium leading-relaxed text-primary-foreground/75 sm:text-base">
+          Veja em poucos minutos como um procedimento pode parecer lucrativo — e ainda assim dar
+          prejuízo.
+        </p>
 
-        <div className="md:pl-2">
+        <div className="mt-4">
           <div className="mx-auto w-full max-w-[300px] overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary/40 shadow-[var(--shadow-card)]">
             {/* VTurb smartplayer — VSL com autoplay (9:16) */}
             {/* @ts-expect-error elemento customizado do VTurb */}
@@ -77,13 +57,34 @@ export function Hero() {
                   backgroundColor: "black",
                 }}
               />
-            {/* @ts-expect-error elemento customizado do VTurb */}
+              {/* @ts-expect-error elemento customizado do VTurb */}
             </vturb-smartplayer>
-            <p className="border-t border-primary-foreground/10 px-4 py-3 text-center text-sm text-primary-foreground/80">
-              Assista em 90 segundos como funciona
-            </p>
           </div>
         </div>
+
+        <div className="mx-auto mt-6 flex max-w-xl flex-col gap-3 sm:flex-row sm:justify-center">
+          <CTAButton
+            onClick={() => {
+              track("cta_click", { location: "hero", variant: "form" });
+              scrollToForm();
+            }}
+          >
+            Calcular meu lucro real
+          </CTAButton>
+          <CTALink
+            href={whatsappUrl()}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="whatsapp"
+            className="text-primary-foreground"
+            onClick={() => track("whatsapp_click", { location: "hero" })}
+          >
+            Falar no WhatsApp
+          </CTALink>
+        </div>
+        <p className="mt-3 text-sm text-primary-foreground/70">
+          Teste gratuito de 7 dias. Sem instalação.
+        </p>
       </div>
     </header>
   );
