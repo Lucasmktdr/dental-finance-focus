@@ -1,53 +1,32 @@
 import { Section } from "./Section";
 
 const PAINS = [
-  {
-    symptom: "Conta pessoal e conta da clínica se misturam no fim do mês.",
-    outcome: "Com custos separados, você enxerga o resultado real do consultório.",
-  },
-  {
-    symptom: "A planilha quebra, some fórmula e ninguém confia no número final.",
-    outcome: "O cálculo passa a ser sempre o mesmo, atualizado e auditável.",
-  },
-  {
-    symptom: "Comissão de parceiro definida no chute, sem saber o que sobra.",
-    outcome: "Você define comissão sabendo a margem que resta em cada procedimento.",
-  },
-  {
-    symptom: "Agenda cheia o mês inteiro e saldo baixo no caixa.",
-    outcome: "Você identifica quais tratamentos sustentam o resultado e quais consomem.",
-  },
-  {
-    symptom: "Medo de investir em equipamento novo sem saber se cabe.",
-    outcome: "Simule o cenário antes de assumir a parcela.",
-  },
+  "Agenda cheia, mas caixa abaixo do esperado no fim do mês.",
+  "Preço definido olhando a concorrência, não o seu custo.",
+  "Desconto concedido sem saber o impacto na margem.",
+  "Repasse ao dentista parceiro consumindo o resultado da venda.",
+  "Laboratório, materiais, cartão e impostos fora da conta do preço.",
+  "Nenhuma clareza sobre quanto custa uma hora da sua clínica.",
 ];
 
 export function Pains() {
   return (
     <Section
-      eyebrow="Reconhece alguma dessas cenas?"
-      title="O sintoma é diferente. A causa costuma ser a mesma."
+      eyebrow="Você se identifica?"
+      title="O problema não é apenas quanto sua clínica fatura."
+      subtitle="É saber quanto realmente sobra depois que todos os custos entram na conta."
       tone="soft"
     >
-      <ul className="grid gap-4 md:grid-cols-2">
+      <ul className="grid gap-3 md:grid-cols-2">
         {PAINS.map((pain) => (
           <li
-            key={pain.symptom}
-            className="rounded-xl border border-border bg-card p-5 shadow-[var(--shadow-card)]"
+            key={pain}
+            className="rounded-xl border border-border bg-card px-5 py-4 text-base font-medium leading-snug text-card-foreground shadow-[var(--shadow-card)]"
           >
-            <p className="text-base font-semibold leading-snug text-card-foreground">
-              {pain.symptom}
-            </p>
-            <p className="mt-2 text-base leading-relaxed text-muted-foreground">{pain.outcome}</p>
+            {pain}
           </li>
         ))}
       </ul>
-
-      <blockquote className="mt-8 rounded-xl bg-primary-deep p-6 text-lg font-semibold leading-snug text-primary-foreground sm:text-xl">
-        “O problema não é falta de pacientes. É cobrar errado sem saber todos os custos
-        envolvidos.”
-      </blockquote>
     </Section>
   );
 }

@@ -23,20 +23,19 @@ export function Hero() {
     <header className="bg-primary-deep px-4 pb-12 pt-8 text-primary-foreground sm:px-6 md:pb-20 md:pt-14">
       <div className="mx-auto w-full max-w-3xl text-center">
         <p className="inline-block rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide sm:text-sm">
-          Precificação e lucro real por procedimento
+          Custo real, preço e margem por procedimento
         </p>
         <h1 className="mt-4 text-[1.75rem] font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl">
-          Você pode estar trabalhando, atendendo e faturando — e mesmo assim{" "}
-          <span className="text-accent">perdendo dinheiro em cada procedimento.</span>
+          Você pode estar faturando alto — e ainda assim{" "}
+          <span className="text-accent">perdendo dinheiro em procedimentos que parecem lucrativos.</span>
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-          Descubra quanto realmente custa cada tratamento da sua clínica e qual deveria ser o seu
-          preço antes de continuar vendendo no prejuízo.
+          Descubra o custo real de cada procedimento, saiba quanto precisa cobrar e pare de definir
+          preços, descontos e repasses no achismo.
         </p>
 
         <p className="mx-auto mt-6 max-w-xl text-sm font-medium leading-relaxed text-primary-foreground/75 sm:text-base">
-          Veja em poucos minutos como um procedimento pode parecer lucrativo — e ainda assim dar
-          prejuízo.
+          Em menos de 2 minutos, veja por que faturamento não significa lucro.
         </p>
 
         <div className="mt-4">
@@ -83,7 +82,7 @@ export function Hero() {
           </CTALink>
         </div>
         <p className="mt-3 text-sm text-primary-foreground/70">
-          Teste gratuito de 7 dias. Sem instalação.
+          Teste grátis por 7 dias • Sem fidelidade • Cancele quando quiser
         </p>
       </div>
     </header>

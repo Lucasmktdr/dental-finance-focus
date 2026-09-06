@@ -32,10 +32,19 @@ export function Offer() {
   }, []);
 
   return (
-    <Section id="oferta" eyebrow="Oferta" title="Teste gratuito de 7 dias" tone="soft">
+    <Section id="oferta" eyebrow="Oferta" title="Teste grátis por 7 dias">
+      <p className="mb-6 max-w-3xl rounded-xl border border-border bg-secondary px-5 py-4 text-base leading-relaxed text-foreground sm:text-lg">
+        Um único erro de precificação pode custar mais do que o valor de vários meses de uma
+        ferramenta que ajuda você a enxergar sua margem.
+      </p>
+
       <div ref={ref} className="grid gap-4 md:grid-cols-2">
         <div className="rounded-xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
-          <h3 className="text-lg font-bold text-card-foreground">O que você recebe nos 7 dias</h3>
+          <h3 className="text-lg font-bold text-card-foreground">O que você faz durante o teste</h3>
+          <p className="mt-2 text-base leading-relaxed text-muted-foreground">
+            Calcule sua Hora Clínica, revise seus custos e entenda o impacto desses números na
+            precificação dos seus procedimentos.
+          </p>
           <ul className="mt-4 space-y-3">
             {INCLUDED.map((item) => (
               <li key={item} className="flex gap-3 text-base leading-relaxed text-foreground">
@@ -47,7 +56,7 @@ export function Offer() {
         </div>
 
         <div className="rounded-xl border border-border bg-card p-5 shadow-[var(--shadow-card)]">
-          <h3 className="text-lg font-bold text-card-foreground">Depois do teste</h3>
+          <h3 className="text-lg font-bold text-card-foreground">Depois do período gratuito</h3>
           <p className="mt-3 text-3xl font-bold text-primary">
             R$ 89,90 <span className="text-base font-medium text-muted-foreground">/mês</span>
           </p>
@@ -61,7 +70,7 @@ export function Offer() {
             </span>
           </p>
           <p className="mt-4 text-base font-medium text-foreground">
-            Acesso gratuito limitado às próximas clínicas desta semana.
+            Teste o Gestão Odonto Pro gratuitamente por 7 dias.
           </p>
           <CTAButton
             className="mt-5"
@@ -70,8 +79,11 @@ export function Offer() {
               document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Começar meu teste de 7 dias
+            Calcular meu lucro real
           </CTAButton>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Teste grátis por 7 dias • Sem fidelidade • Cancele quando quiser
+          </p>
         </div>
       </div>
     </Section>
