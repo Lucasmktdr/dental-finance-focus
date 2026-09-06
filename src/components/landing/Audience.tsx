@@ -2,21 +2,23 @@ import { Check, X } from "lucide-react";
 import { Section } from "./Section";
 
 const FOR = [
-  "Dentista proprietário ou sócio de clínica particular",
-  "Clínica com equipe ou parceiros dividindo procedimentos",
-  "Rotina com múltiplos tratamentos e tabelas diferentes",
-  "Quem quer decidir preço, desconto e meta com números",
+  "Você é proprietário ou sócio de uma clínica particular",
+  "Trabalha com equipe ou dentistas parceiros",
+  "Possui diferentes procedimentos e tabelas de preço",
+  "Participa da definição de preços e descontos",
+  "Quer entender sua margem antes de tomar decisões",
 ];
 
 const NOT_FOR = [
-  "Estudante de odontologia",
-  "Dentista sem autonomia financeira sobre a clínica",
-  "Quem procura agenda, prontuário eletrônico ou captação de pacientes",
+  "Você procura um sistema de agenda",
+  "Procura prontuário eletrônico",
+  "Procura uma ferramenta de captação de pacientes",
+  "Quer apenas organizar consultas",
 ];
 
 export function Audience() {
   return (
-    <Section eyebrow="Qualificação" title="Para quem é — e para quem não é">
+    <Section eyebrow="Isso é para você?" title="Para quem é — e para quem não é" tone="soft">
       <div className="grid gap-4 md:grid-cols-2">
         <div className="rounded-xl border border-accent/40 bg-accent/10 p-5">
           <h3 className="text-lg font-bold text-foreground">É para você se…</h3>
@@ -31,7 +33,7 @@ export function Audience() {
         </div>
 
         <div className="rounded-xl border border-border bg-secondary p-5">
-          <h3 className="text-lg font-bold text-foreground">Não é para…</h3>
+          <h3 className="text-lg font-bold text-foreground">Não é para você se…</h3>
           <ul className="mt-4 space-y-3">
             {NOT_FOR.map((item) => (
               <li
@@ -45,6 +47,10 @@ export function Audience() {
           </ul>
         </div>
       </div>
+
+      <p className="mt-8 text-lg font-semibold leading-snug text-foreground sm:text-xl">
+        Gestão Odonto = decisão financeira e precificação.
+      </p>
     </Section>
   );
 }
