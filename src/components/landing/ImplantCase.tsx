@@ -15,9 +15,9 @@ export function ImplantCase() {
   return (
     <Section
       id="exemplo-implante"
-      eyebrow="Caso do implante"
-      title="Um procedimento de R$ 2.500 pode dar prejuízo."
-      subtitle="E esse é exatamente o tipo de erro que acontece quando o preço é definido olhando apenas para o valor cobrado — e não para todos os custos envolvidos."
+      eyebrow="Olhe este caso"
+      title="Você cobraria R$ 2.500 por um implante se soubesse que ele custa R$ 2.806?"
+      subtitle="Parece uma venda de R$ 2.500. Mas quando todos os custos entram na conta, o resultado é outro."
     >
       <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
         <div className="border-b border-border bg-primary-deep px-5 py-5 text-primary-foreground sm:px-6">
@@ -65,12 +65,21 @@ export function ImplantCase() {
         </div>
       </div>
 
-      <p className="mt-8 text-lg font-bold leading-snug text-foreground sm:text-xl">
+      <p className="mt-8 text-xl font-bold leading-snug text-destructive sm:text-2xl">
+        Você acabou de vender R$ 2.500 e perder R$ 306.
+      </p>
+      <p className="mt-4 text-lg font-bold leading-snug text-foreground sm:text-xl">
         O problema não é vender por R$ 2.500.
         <br />O problema é acreditar que R$ 2.500 significa lucro.
       </p>
       <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
-        Com o Gestão Odonto, você enxerga o custo real e a margem antes de decidir o preço.
+        Quando você não conhece o custo real do procedimento, decisões aparentemente normais — como
+        dar desconto, pagar comissão ou dividir o valor com um parceiro — podem mudar completamente
+        o resultado da venda.
+      </p>
+      <p className="mt-3 text-base font-semibold leading-relaxed text-primary sm:text-lg">
+        É exatamente esse tipo de cenário que o Gestão Odonto Pro ajuda você a enxergar antes de
+        cobrar.
       </p>
     </Section>
   );
