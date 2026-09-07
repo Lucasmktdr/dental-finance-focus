@@ -74,10 +74,11 @@ export function LeadForm() {
     <Section id="formulario" tone="deep">
       <div className="mx-auto max-w-2xl">
         <h2 className="text-2xl font-bold leading-tight sm:text-3xl">
-          Pare de cobrar no escuro: veja o lucro real de cada tratamento antes da próxima consulta.
+          Pare de definir preços no achismo. Descubra o lucro real dos seus procedimentos.
         </h2>
         <p className="mt-3 text-base text-primary-foreground/80">
-          Preencha e comece o teste gratuito de 7 dias.
+          Calcule sua Hora Clínica, coloque seus custos na conta e entenda o resultado antes de
+          tomar sua próxima decisão.
         </p>
 
         <form onSubmit={handleSubmit} noValidate className="mt-6 space-y-4">
@@ -132,8 +133,11 @@ export function LeadForm() {
           )}
 
           <CTAButton type="submit" className="w-full sm:w-full">
-            Quero calcular o lucro real de cada procedimento da minha clínica
+            Calcular meu lucro real
           </CTAButton>
+          <p className="text-sm text-primary-foreground/70">
+            7 dias grátis • R$ 89,90/mês depois • Sem fidelidade
+          </p>
           <p className="text-sm text-primary-foreground/70">
             Ao enviar, você é direcionado ao WhatsApp da equipe com seus dados já preenchidos.
           </p>
