@@ -23,7 +23,7 @@ export function Tools() {
   return (
     <Section
       eyebrow="Incluído no acesso"
-      title="Ferramentas para decidir antes de cobrar"
+      title="Tudo o que você precisa para decidir antes de cobrar"
       tone="deep"
     >
       <div className="grid gap-4 md:grid-cols-3">

@@ -5,6 +5,9 @@ import { Pains } from "@/components/landing/Pains";
 import { Alternatives } from "@/components/landing/Alternatives";
 import { BeliefBreak } from "@/components/landing/BeliefBreak";
 import { ImplantCase } from "@/components/landing/ImplantCase";
+import { Mechanism } from "@/components/landing/Mechanism";
+import { ClinicHour } from "@/components/landing/ClinicHour";
+import { ProductDemo } from "@/components/landing/ProductDemo";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { Audience } from "@/components/landing/Audience";
 import { Tools } from "@/components/landing/Tools";
@@ -60,10 +63,13 @@ function LandingPage() {
       <Pains />
       <BeliefBreak />
       <ImplantCase />
+      <Mechanism />
+      <ClinicHour />
       <Alternatives />
+      <ProductDemo />
+      <Tools />
       <HowItWorks />
       <Audience />
-      <Tools />
       <Offer />
       <Faq />
       <LeadForm />
