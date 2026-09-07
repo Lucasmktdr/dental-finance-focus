@@ -63,10 +63,13 @@ function LandingPage() {
       <Pains />
       <BeliefBreak />
       <ImplantCase />
+      <Mechanism />
+      <ClinicHour />
       <Alternatives />
+      <ProductDemo />
+      <Tools />
       <HowItWorks />
       <Audience />
-      <Tools />
       <Offer />
       <Faq />
       <LeadForm />
