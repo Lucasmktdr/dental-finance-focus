@@ -35,7 +35,6 @@ export function Hero() {
               style={{ width: "100%", aspectRatio: "2 / 1", border: "none", borderRadius: "16px", display: "block" }}
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
-              fetchPriority="high"
             />
           </div>
         </div>
