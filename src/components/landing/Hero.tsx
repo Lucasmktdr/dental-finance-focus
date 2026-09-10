@@ -27,12 +27,26 @@ export function Hero() {
         </p>
 
         <div className="mt-4">
-          <div className="mx-auto w-full max-w-[720px] overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary/40 shadow-[var(--shadow-card)]">
+          <div
+            className="mx-auto w-full overflow-hidden border border-primary-foreground/15 bg-primary/40 shadow-[var(--shadow-card)]"
+            style={{
+              position: "relative",
+              maxWidth: "420px",
+              aspectRatio: "9 / 16",
+              borderRadius: "24px",
+            }}
+          >
             <iframe
               id="panda-0e5a7e22-4b36-4c8e-81f7-2f42feae8e26"
               src="https://player-vz-d30ef566-197.tv.pandavideo.com.br/embed/?v=0e5a7e22-4b36-4c8e-81f7-2f42feae8e26"
-              title="VSL Gestão Odonto"
-              style={{ width: "100%", aspectRatio: "2 / 1", border: "none", borderRadius: "16px", display: "block" }}
+              title="Vídeo sobre gestão odontológica"
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                border: "none",
+              }}
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
             />
